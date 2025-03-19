@@ -1,0 +1,118 @@
+body {
+    background-color: #181818;
+    font-family: 'Inria Serif', serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 0 4px black;
+}
+
+p {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 0 4px black;
+}
+
+#main-image-container {
+    position: relative;
+    width: 100%;
+}
+
+#main-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4vw;
+    text-shadow: 
+        1px 1px 0px black, 
+        -1px -1px 0px black,  
+        1px -1px 0px black, 
+        -1px 1px 0px black, 
+        2px 2px 0px black, 
+        -2px -2px 0px black, 
+        2px -2px 0px black, 
+        -2px 2px 0px black;
+    white-space: normal;
+    width: 90%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#other-images {
+    display: block;
+    margin-top: 20px;
+}
+
+#other-images div {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+#other-images img {
+    width: 100%;
+    height: auto;
+}
+
+#other-images div p {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 4vw;
+    text-shadow: 
+        1px 1px 0px black, 
+        -1px -1px 0px black,  
+        1px -1px 0px black, 
+        -1px 1px 0px black, 
+        2px 2px 0px black, 
+        -2px -2px 0px black, 
+        2px -2px 0px black, 
+        -2px 2px 0px black;
+    white-space: normal;
+    width: 90%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #main-image-text {
+        font-size: 5vw;
+    }
+
+    #other-images div {
+        width: 100%;
+    }
+
+    #other-images div p {
+        font-size: 3.5vw;
+        bottom: 20px;
+    }
+}
